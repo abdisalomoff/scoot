@@ -1,0 +1,201 @@
+.riding {
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 155px;
+    }
+    
+    &__wrapper {
+        max-width: 445px;
+        width: 100%;
+        margin-right: 220px;
+    }
+    
+    &__heading {
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $DarkNavy;
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $DimGrey;
+        margin-bottom: 40px;
+    }
+    
+    &__button {
+    }
+    
+    &__img-wrapper {
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            background-image: url("./../images/riding-arrow.svg");
+            width: 740px;
+            height: 150px;
+            position: absolute;
+            right: calc(0% - 165px);
+            top: 300px;
+        }
+    }
+    
+    &__img {
+        border-radius: 50%;
+        box-shadow: 500px 0 0 $LightGrey;
+    }
+}
+
+@media only screen and (max-width: 950px) { 
+    /* TABLET */
+    
+    .riding {
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 128px;
+        }
+        
+        &__wrapper {
+            max-width: 573px;
+            width: 100%;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+            color: $DarkNavy;
+            margin-bottom: 40px;
+        }
+        
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $DimGrey;
+            margin-bottom: 40px;
+        }
+        
+        &__button {
+        }
+        
+        &__img-wrapper {
+            position: relative;
+            order: -1;
+            &::after {
+                content: "";
+                display: inline-block;
+                background-image: url("./../images/riding-arrow.svg");
+                width: 740px;
+                height: 150px;
+                position: absolute;
+                right: calc(-37%);
+                top: 59%;
+            }
+        }
+        &__img {
+            border-radius: 50%;
+            box-shadow: none;
+            margin-bottom: 56px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 475px) { 
+    /* MOBILE */
+    
+    .riding {
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 120px;
+        }
+        
+        &__wrapper {
+            max-width: 311px;
+            width: 100%;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+            color: $DarkNavy;
+            margin-bottom: 32px;
+        }
+        
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: $DimGrey;
+            margin-bottom: 40px;
+        }
+        
+        &__button {
+        }
+        
+        &__img-wrapper {
+            &::after {
+                content: "";
+                display: inline-block;
+                background-image: url("./../images/riding-arrow.svg");
+                width: 740px;
+                height: 150px;
+                position: absolute;
+                right: calc(-139%);
+                top: 45%;
+            }
+        }
+        
+        &__img {
+            width: 311px;
+            height: 311px;
+            border-radius: 50%;
+            box-shadow: none;
+            margin-bottom: 56px;
+        }
+    }
+}

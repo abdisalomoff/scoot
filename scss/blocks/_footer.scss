@@ -1,0 +1,468 @@
+.footer {
+    
+    &__container {
+    }
+    
+    &__top-wrapper {
+        background-color: $DarkNavy;
+    }
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 102px;
+        padding-bottom: 102px;
+        position: relative;
+    }
+    
+    &__circles {
+        background-image: url(./../images/semi-circles.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: absolute;
+        bottom: 0;
+        right: -28%;
+        width: 1153px;
+        height: 347px;
+    }
+
+    &__header {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $white;        
+        max-width: 415px;
+        width: 100%;
+    }
+    
+    &__media-wrapper {
+        display: flex;
+        gap: 18px;
+    }
+    
+    &__media-item {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px 9px 16px;
+        background: $LightGrey;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    &__media-icon {
+        margin-right: 11.73px;
+    }
+    
+    &__media-item-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__media-item-desc {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: $DarkNavy;
+        cursor: pointer;
+    }
+    
+    &__media-item-head {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: $DarkNavy;
+        cursor: pointer;
+    }
+    
+    &__bottom-wrapper {
+        background-color: #333A44;
+    }
+    
+    &__bottom {
+        padding-top: 35px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__bottom-left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-link {
+        margin-right: 58.58px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__item {
+    }
+    
+    &__item-link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $DimGrey;
+        &:hover {
+            color: $yellow;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
+    
+    &__soc-container {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+    
+    &__soc-item {
+    }
+    
+    &__soc-link {
+    }
+    
+    &__soc-icon {
+        color: $yellow;
+        &:hover {
+            color: $LightGrey;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 765px) { 
+    /* TABLET */
+
+    .footer {
+    
+        &__container {
+        }
+        
+        &__top-wrapper {
+            background-color: $DarkNavy;
+        }
+        
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 62px;
+            padding-bottom: 62px;
+            position: relative;
+        }
+        
+        &__circles {
+            background-image: url(./../images/semi-circles.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 1153px;
+            height: 347px;
+        }
+    
+        &__header {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: $white;        
+            text-align: center;
+            max-width: 415px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        &__media-wrapper {
+            display: flex;
+            gap: 13px;
+        }
+        
+        &__media-item {
+            display: flex;
+            align-items: center;
+            padding: 5.71px 11.43px 6.43px 11.43px;
+            background: $LightGrey;
+            border-radius: 4px;
+        }
+        
+        &__media-icon {
+            margin-right: 11.73px;
+        }
+        
+        &__media-item-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__media-item-desc {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: $DarkNavy;
+        }
+        
+        &__media-item-head {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: $DarkNavy;
+        }
+        
+        &__bottom-wrapper {
+            background-color: #333A44;
+        }
+        
+        &__bottom {
+            padding-top: 35px;
+            padding-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__bottom-left {
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo-link {
+            margin-right: 58.58px;
+        }
+        
+        &__logo {
+        }
+        
+        &__list {
+            display: flex;
+            gap: 32px;
+        }
+        
+        &__item {
+        }
+        
+        &__item-link {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $DimGrey;
+            &:hover {
+                color: $yellow;
+            }
+            &:active {
+                opacity: 0.6;
+            }
+        }
+        
+        &__soc-container {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        
+        &__soc-item {
+        }
+        
+        &__soc-link {
+        }
+        
+        &__soc-icon {
+            color: $yellow;
+            &:hover {
+                color: $LightGrey;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 600px) { 
+    /* MOBILE */
+
+    .footer {
+    
+        &__container {
+        }
+        
+        &__top-wrapper {
+            background-color: $DarkNavy;
+        }
+        
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 88px;
+            padding-bottom: 88px;
+            position: relative;
+        }
+        
+        &__circles {
+            background-image: url(./../images/semi-circles.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: absolute;
+            bottom: 0;
+            right: -29%;
+            width: 1153px;
+            height: 347px;
+        }
+    
+        &__header {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -2.14286px;
+            color: $white;        
+            text-align: center;
+            max-width: 311px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        &__media-wrapper {
+            display: flex;
+            gap: 13px;
+        }
+        
+        &__media-item {
+            display: flex;
+            align-items: center;
+            padding: 5.71px 11.43px 6.43px 11.43px;
+            background: $LightGrey;
+            border-radius: 4px;
+        }
+        
+        &__media-icon {
+            margin-right: 11.73px;
+        }
+        
+        &__media-item-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__media-item-desc {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: $DarkNavy;
+        }
+        
+        &__media-item-head {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: $DarkNavy;
+        }
+        
+        &__bottom-wrapper {
+            background-color: #333A44;
+        }
+        
+        &__bottom {
+            padding-top: 64px;
+            padding-bottom: 88px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__bottom-left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__logo-link {
+            margin-right: 0;
+            margin-bottom: 41px;
+        }
+        
+        &__logo {
+        }
+        
+        &__list {
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            margin-bottom: 85px;
+        }
+        
+        &__item {
+            text-align: center;
+        }
+        
+        &__item-link {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $DimGrey;
+            &:hover {
+                color: $yellow;
+            }
+        }
+        
+        &__soc-container {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        
+        &__soc-item {
+        }
+        
+        &__soc-link {
+        }
+        
+        &__soc-icon {
+            color: $yellow;
+            &:hover {
+                color: $LightGrey;
+            }
+        }
+    }
+}

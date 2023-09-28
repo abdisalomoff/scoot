@@ -1,0 +1,246 @@
+.step {
+
+    &__container {
+        margin-bottom: 200px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 380px;
+        width: 100%;
+        padding-left: 30px;
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 15px;
+            width: 100%;
+            background-color: $LightGrey;
+            position: absolute;
+            top: 47.5px;
+            transform: translateY(-100%) translateX(-90%);
+            z-index: -1;
+        }
+    }
+
+    &__heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $DarkNavy;      
+        margin-bottom: 27px;  
+        &::before {
+            content: "";
+            display: block;
+            width: 96px;
+            height: 96px;
+            background-color: $yellow;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+    }
+    &__heading-1::before {
+        background-image: url(./../images/mini-l-1.svg);
+    }
+
+    &__heading-2::before {
+        background-image: url(./../images/mini-l-2.svg);
+    }
+
+    &__heading-3::before {
+        background-image: url(./../images/mini-l-3.svg);
+    }
+
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $DimGrey;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    /* TABLET */
+
+    .step {
+
+        &__container {
+            max-width: 768px;
+            margin-bottom: 145px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__item {
+            max-width: 573px;
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 40px;
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 15px;
+                background-color: $LightGrey;
+                position: absolute;
+                top: none;
+                left: 47.5px;
+                transform: none;
+                transform: translateX(-50%) translateY(-100%);
+                z-index: -1;
+            }
+        }
+    
+        &__heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: $DarkNavy;      
+            margin-bottom: 27px;  
+            display: flex;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 96px;
+                height: 96px;
+                background-color: $yellow;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 0px;
+                margin-right: 79px;
+            }
+        }
+        &__heading-1::before {
+            background-image: url(./../images/mini-l-1.svg);
+        }
+    
+        &__heading-2::before {
+            background-image: url(./../images/mini-l-2.svg);
+        }
+    
+        &__heading-3::before {
+            background-image: url(./../images/mini-l-3.svg);
+        }
+    
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $DimGrey;
+            max-width: 398px;
+            width: 100%;
+            margin-left: 175px;
+            margin-top: -70px;
+        }
+    }
+} 
+
+@media only screen and (max-width: 614px) { 
+    /* TABLET */
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            max-width: 375px;
+            margin-bottom: 120px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+    
+        &__item {
+            max-width: 311px;
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 0;
+            position: relative;
+            &::after {
+                display: none;
+            }
+        }
+    
+        &__heading {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            max-width: 311px;
+            width: 100%;
+            text-align: center;
+            letter-spacing: -0.892857px;
+            color: $DarkNavy;            
+            margin-bottom: 24px;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                content: "";
+                display: block;
+                width: 56px;
+                height: 56px;
+                background-color: $yellow;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 24px;
+                margin-right: 0px;
+            }
+        }
+        &__heading-1::before {
+            background-image: url(./../images/mini-m-l-1.svg);
+        }
+    
+        &__heading-2::before {
+            background-image: url(./../images/mini-m-l-2.svg);
+        }
+    
+        &__heading-3::before {
+            background-image: url(./../images/mini-m-l-3.svg);
+        }
+    
+        &__text {
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $DimGrey;
+            text-align: center;
+            max-width: 311px;
+            width: 100%;
+            margin-left: 0;
+            margin-top: -0;
+        }
+    }
+} 

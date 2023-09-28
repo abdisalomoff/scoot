@@ -1,0 +1,230 @@
+.header {
+  background-color: $white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 111;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__list-btn {
+    display: none;
+  }
+
+  &__logo-link {
+    margin-right: 58.18px;
+  }
+
+  &__logo-img {
+    width: 107.82px;
+    height: 28.56px;
+    object-fit: contain;
+  }
+
+  &__right {
+    display: flex;
+    max-width: 940px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item-link {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $DimGrey;
+    &:hover {
+      color: $yellow;
+    }
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.button {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: $white;
+  padding: 14px 39px;
+  background-color: $yellow;
+  &:hover {
+    color: $yellow;
+    background-color: transparent;
+    box-shadow: 0 0 0 3px $yellow;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .header {
+    background-color: $white;
+    &__container {
+      display: flex;
+      align-items: center;
+      padding-top: 22px;
+      padding-bottom: 21px;
+      position: sticky;
+    }
+
+    &__left {
+      display: flex;
+    }
+
+    &__list-btn {
+      display: none;
+    }
+
+    &__logo-link {
+      margin-right: 58.18px;
+    }
+
+    &__logo-img {
+      width: 107.82px;
+      height: 28.56px;
+    }
+
+    &__right {
+      display: flex;
+      max-width: 940px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__item-link {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      color: $DimGrey;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  /* MOBILE */
+
+  .header {
+    background-color: $white;
+    &__container {
+      display: flex;
+      align-items: center;
+      padding-top: 22px;
+      padding-bottom: 21px;
+      position: sticky;
+      justify-content: center;
+      position: relative;
+    }
+
+    &__active {
+      .header__right {
+        transform: translateX(0);
+        transition: all 1s ease;
+      }
+      .header__burger-img {
+        display: none;
+      }
+      .header__cross-img {
+        display: inline-block;
+      }
+    }
+
+    &__m-container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list-btn {
+      display: flex;
+      border: none;
+      background: none;
+      outline: none;
+      position: absolute;
+      top: 30px;
+      left: 32px;
+    }
+
+    &__cross-img {
+      display: none;
+    }
+
+    &__logo-link {
+      margin-right: 0px;
+      display: flex;
+    }
+
+    &__logo-img {
+      width: 107.82px;
+      height: 28.56px;
+      object-fit: contain;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      position: absolute;
+      max-width: 256px;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background-color: #333a44;
+      padding-top: 64px;
+      padding-left: 39px;
+      padding-bottom: 300px;
+      transition: all 1s ease;
+      transform: translateX(-200%);
+      box-shadow: 256px 0 0 0 rgba(0, 0, 0, 0.75);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 339px;
+      justify-content: start;
+      text-align: left;
+    }
+
+    &__item-link {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      color: $LightGrey;
+    }
+  }
+}
