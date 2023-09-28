@@ -1,4 +1,4 @@
-.dheroes {
+.zerocity {
 
     &__container {
         padding-bottom: 200px;
@@ -15,10 +15,10 @@
         align-items: center;
         justify-content: space-between;
         &:nth-child(2n) {
-            .dheroes__text-wrapper {
+            .zerocity__text-wrapper {
                 order: -1;
             }
-            .dheroes__img-wrapper {
+            .zerocity__img-wrapper {
                 position: relative;
                 &::before {
                     content: "";
@@ -33,7 +33,7 @@
                     position: absolute;
                 }
             }
-            .dheroes__img {
+            .zerocity__img {
                 border-radius: 50%;
                 box-shadow: 500px 0 0 $LightGrey;
             }
@@ -91,7 +91,7 @@
     /* TABLET */
 
 
-    .dheroes {
+    .zerocity {
 
         &__container {
             padding-bottom: 104px;
@@ -109,10 +109,10 @@
             align-items: center;
             justify-content: center;
             &:nth-child(2n) {
-                .dheroes__text-wrapper {
+                .zerocity__text-wrapper {
                     order: 1;
                 }
-                .dheroes__img-wrapper {
+                .zerocity__img-wrapper {
                     position: relative;
                     &::before {
                         content: "";
@@ -127,7 +127,7 @@
                         position: absolute;
                     }
                 }
-                .dheroes__img {
+                .zerocity__img {
                     border-radius: 50%;
                     box-shadow: 500px 0 0 $LightGrey;
                 }
@@ -191,7 +191,7 @@
 @media only screen and (max-width: 475px) { 
     /* MOBILE */
 
-    .dheroes {
+    .zerocity {
 
         &__container {
             padding-bottom: 120px;
@@ -209,10 +209,10 @@
             align-items: center;
             justify-content: center;
             &:nth-child(2n) {
-                .dheroes__text-wrapper {
+                .zerocity__text-wrapper {
                     order: 1;
                 }
-                .dheroes__img-wrapper {
+                .zerocity__img-wrapper {
                     position: relative;
                     &::before {
                         content: "";
@@ -227,7 +227,7 @@
                         position: absolute;
                     }
                 }
-                .dheroes__img {
+                .zerocity__img {
                     border-radius: 50%;
                     box-shadow: 500px 0 0 $LightGrey;
                 }
